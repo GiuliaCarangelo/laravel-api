@@ -15,7 +15,7 @@ class ProjectSeeder extends Seeder
      */
     public function run(): void
     {
-        $projects = array(
+        $projects = [
             array(
                 'user_id' => 2,
                 'name' => 'DC Comics',
@@ -44,7 +44,7 @@ class ProjectSeeder extends Seeder
                 'repo_url' => 'https://github.com/GiuliaCarangelo/htmlcss-dropbox',
                 'creation_day' => '2023-11-10' ,
             ),
-        );
+        ];
 
             foreach($projects as $project){
             $newProject = new Project();
